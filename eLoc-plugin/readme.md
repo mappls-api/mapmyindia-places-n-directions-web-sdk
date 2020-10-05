@@ -99,18 +99,7 @@ elocObj.remove();
 ```
 <br>
 
-### 3. Setting up the pop-up content on place details marker click
-
-#### Method
-
-`setPopupContent`
-
-```js
-elocObj.setPopupContent(“Popup Html”);
-```
-<br>
-
-### 4. Setting up the div content for populating details from getEloc()
+### 3. Setting up the div content for populating details from getEloc()
 
 #### Method
 
