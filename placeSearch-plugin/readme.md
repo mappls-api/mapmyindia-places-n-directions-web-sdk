@@ -44,11 +44,11 @@ Visit the following link for visiting the live demo:
 
 [LIVE DEMO](https://www.mapmyindia.com/api/advanced-maps/doc/sample/mapmyindia-maps-search-plugin)
 
-The above implementation uses MapmyIndia Interactive Map JS library as map rendering framework showcasing integration of Place Details plugin.
+The above implementation uses MapmyIndia Interactive Map JS library as map rendering framework showcasing integration of Place Search plugin.
 
 ## Implementation
 
-### Adding the MapmyIndia Place Details plugin script
+### Adding the MapmyIndia Place Search plugin script
 
 #### Script URL
 
@@ -56,7 +56,7 @@ The above implementation uses MapmyIndia Interactive Map JS library as map rende
 <script src="https://apis.mapmyindia.com/advancedmaps/api/{token-OR-JWT-key}/map_sdk_plugins"></script>
 ```
 
-### 1. Initializing the Place Details plugin
+### 1. Initializing the Place Search plugin
 
 #### Method
 
