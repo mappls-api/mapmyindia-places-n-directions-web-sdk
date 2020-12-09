@@ -29,7 +29,7 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 A simple plugin / widget to search for places powered by the best online maps from MapmyIndia. The Place Search plugin for MapmyIndia Web Map JS library is provided as a means to enable searching of Places on MapmyIndia Maps. 
 
-The plugin can be used in combination with our Interactive Map JS library but it also possesses the adaptability to be used as an independent plugin within any web map implementation. Thus it enables developers to include MapmyIndia Places SDK in their own customized solutions easily.
+The plugin can be used in combination with our Interactive Map JS library but it also possesses the adaptability to be used as an independent plugin within any web app implementation. Thus it enables developers to include MapmyIndia Places SDK in their own customized solutions easily.
 
 The SDK offers the following basic functionalities: 
 1. Ability to search for places directly with or without MapmyIndia Maps visual interface.
@@ -143,8 +143,8 @@ Following is an example of calling MapmyIndia.search() method programmatically f
           
           /*Search plugin initialization*/
             var optional_config={
-                location:[28.61, 77.23]/*,
-                pod:'City',
+                location:[28.61, 77.23],
+               /* pod:'City',
                 bridge:true,
                 tokenizeAddress:true,*
                 filter:'cop:9QGXAM',
@@ -160,17 +160,19 @@ Following is an example of calling MapmyIndia.search() method programmatically f
              * 
              * */
          
-            function callback(data) { console.log(data);
+            var marker;
+            function callback(data) { 
                 if(data)
                 {
-         if(data.error){console.log(data);return false;}
-                    var eloc=data[0].eLoc;
-                    if(!eloc) return false;
-                    /*Use getEloc Plugin to add marker*/
-                    new MapmyIndia.getEloc({map:map,eloc:eloc});
+                    var dt=data[0];
+                    if(!dt) return false;
+                    var eloc=dt.eLoc;
+                    var place=dt.placeName+", "+dt.placeAddress;
+                    /*Use elocMarker Plugin to add marker*/
+                    if(marker) marker.remove();
+                    marker=new MapmyIndia.elocMarker({map:map,eloc:eloc,popupHtml:place,popupOptions:{openPopup:true}}).fitbounds();
                 }
-                console.log(data[0]);
-             }    
+              }    
       </script>
    </body>
 </html>
