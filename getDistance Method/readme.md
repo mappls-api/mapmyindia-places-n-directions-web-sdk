@@ -53,14 +53,14 @@ Visit the following link for visiting the live demo:
 ## Properties
 ### Mandatory
 
-1. `coordinates `(string): Semicolon separated eloc or lat,long or both.
+1. `coordinates` (string): Semicolon separated eloc or lat,long or both.
 2. `callback`: Method to get response
 ### Optional
 1. `resource` (string): Default is `distance_matrix` and can be changed to `distance_matrix_eta` or `distance_matrix_traffic` as per requirement.
 2. `profile` (string): Default `driving` for four wheelers and can be changed to `biking` and `trucking` for two wheelers and heavy vehicles respectively.
 3. `rtype` (boolean): type of route required for navigation, where values mean:
--   `0` optimal (default) 
--   `1` shortest (it will calculate route by excluding access penalties like private roads, etc.)
+    -   `0` optimal (default) 
+    -   `1` shortest (it will calculate route by excluding access penalties like private roads, etc.)
 
 4. `region` (string): It is for the available countries. Default is India; for other countries (Sri Lanka, Nepal, Bangladesh & Bhutan) this parameter is mandatory. Possible values are `ind` (for India, default), `lka` (for Sri Lanka) , `npl` (for Nepal) , `bgd` (for Bangladesh), `mmr` (for Myanmar) and `btn` (for Bhutan).
 
