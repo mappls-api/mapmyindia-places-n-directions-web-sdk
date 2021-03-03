@@ -86,14 +86,11 @@ var elocObj = MapmyIndia.getEloc({ map: map, eloc: '3F45CB', callback: elocData 
 9. `infoDiv` (boolean): To render html div on map or not. Default is true. (example: `infoDiv:true`)
 10. `click_callback`: method to call on click of callback. 
 
-<br>
-
 ### 2. Removing the Markers populated by Place Details plugin
 
 ```js
 elocObj.remove();
 ```
-<br>
 
 ### 3. Setting up the div content for populating details from getEloc()
 
