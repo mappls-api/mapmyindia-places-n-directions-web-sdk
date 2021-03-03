@@ -79,12 +79,11 @@ var elocObj = MapmyIndia.getEloc({ map: map, eloc: '3F45CB', callback: elocData 
         ```
 3. `divId`: The div to put the result in.
 4. `callback`: to return data to a specified callback method.
-5. `preserve` : To preserve multiple markers on subsequent rendering of new eLoc(s).
-6. `markerPopup` (boolean): to show pop-ups on marker click. Default is true.(example: `markerPopup:true`)
-7. `fitbounds` (boolean): To show all rendered eLoc(s) in a single view bound. (example: `fitbounds:true`)
-8. `padding` : padding in fitbounds, if any. (Example: `padding:[10,10]`)
-9. `infoDiv` (boolean): To render html div on map or not. Default is true. (example: `infoDiv:true`)
-10. `click_callback`: method to call on click of callback. 
+5. `markerPopup` (boolean): to show pop-ups on marker click. Default is true.(example: `markerPopup:true`)
+6. `fitbounds` (boolean): To show all rendered eLoc(s) in a single view bound. (example: `fitbounds:true`)
+7. `fitboundOptions` : padding in fitbounds, if any. (Example: `{ padding:50,maxZoom:18}`)
+8. `infoDiv` (boolean): To render html div on map or not. Default is true. (example: `infoDiv:true`)
+9. `click_callback`: method to call on click of callback. 
 
 ### 2. Removing the Markers populated by Place Details plugin
 
@@ -92,7 +91,7 @@ var elocObj = MapmyIndia.getEloc({ map: map, eloc: '3F45CB', callback: elocData 
 elocObj.remove();
 ```
 
-### 3. Setting up the div content for populating details from getEloc()
+### 3. Setting up the div content for populating details from getEloc() plugin
 
 ```js
 elocObj.setDivContent(“Div html);
