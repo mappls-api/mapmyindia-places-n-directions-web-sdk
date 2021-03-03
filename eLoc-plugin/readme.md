@@ -90,20 +90,12 @@ var elocObj = MapmyIndia.getEloc({ map: map, eloc: '3F45CB', callback: elocData 
 
 ### 2. Removing the Markers populated by Place Details plugin
 
-#### Method
-
-`remove`
-
 ```js
 elocObj.remove();
 ```
 <br>
 
 ### 3. Setting up the div content for populating details from getEloc()
-
-#### Method
-
-`setDivContent`
 
 ```js
 elocObj.setDivContent(“Div html);
