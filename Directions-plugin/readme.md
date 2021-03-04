@@ -15,12 +15,6 @@ Powered with India's most comprehensive and robust mapping functionalities. Now 
 | ------- | ------------- | ------------------------------------------------------------- |
 | 0.0.1   | 04 March 2021 | MapmyIndia API Team ([MS](https://github.com/mamtasharma117)) |
 
-## Method Version History
-
-| Version | Last Updated     | Author                                                         |
-| ------- | ---------------- | -------------------------------------------------------------- |
-| 0.0.1   | 15 December 2020 | MapmyIndia API Team ([BP](https://github.com/balmukandpathak)) |
-
 ## Introduction
 
 This plugin, offered by MapmyIndia Places & Directions SDK for Web, uses integrated places searches for directions for several modes of transportation, including driving, biking and walking.
