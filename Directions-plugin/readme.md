@@ -23,7 +23,7 @@ Powered with India's most comprehensive and robust mapping functionalities. Now 
 
 ## Introduction
 
-This plugin, offered by MapmyIndia Places & Directions SDK for Web, uses integrated places searches for directions for several modes of transportation, including driving and biking.
+This plugin, offered by MapmyIndia Places & Directions SDK for Web, uses integrated places searches for directions for several modes of transportation, including driving, biking and walking.
 
 The plugin offers the following basic functionalities:
 
