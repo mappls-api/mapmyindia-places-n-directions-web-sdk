@@ -106,7 +106,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
             geoposition: "28.544, 77.4541"
         }
         ```
-   - Example: For multiple via Points
+   - Example: For multiple via Points, user must pass the via points as array
         ```js
         via:[{label:'mathura',geoposition:"28.544,77.4541"},{label:'Koshi',geoposition:"28.144,77.4541"}],
         ```
