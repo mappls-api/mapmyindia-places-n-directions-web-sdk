@@ -66,6 +66,7 @@ The above implementation uses MapmyIndia Interactive Map JS library as map rende
 /*Search plugin initialization*/
             var placeOptions={
                 location:[28.61, 77.23]/*,
+                geolocation:true,
                 pod:'City',
                 bridge:true,
                 tokenizeAddress:true,*
@@ -100,6 +101,7 @@ new MapmyIndia.search(document.getElementById("auto"),placeOptions,callback);
     - `bridge`: initiates a bridge to be created to provide applicable nearby API searches. Involves using Nearby Search Plugin in conjunction with Place Search Plugin.
     - `tokenizeAddress`: boolean value used to return address tokens from the searched places from MapmyIndia Search APIs. e.g. `tokenizeAddress:true`
     - `distance`: boolean value used to show aerial distance from location passed in `location`. of the searched place in results listing e.g. `distance:true`
+    - `geolocation` : boolean value used to enable or disable current location selection . Default is true.
     - `width`: width of the suggested div. e.g. `width:300`
     - `height`: height of the suggested div. e.g `height:300`
 2. `callback`: callback to get results/error after call or selection.
