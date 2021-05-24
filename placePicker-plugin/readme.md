@@ -71,6 +71,7 @@ var options=
         /*
         location:{lat:28.8787,lng:77.08888}, //to open that location on map on initailization
         closeBtn:true,
+	geolocation:false,
         closeBtn_callback:closeBtn_callback,
         search:true,
         topText:'Location Search',
@@ -90,6 +91,7 @@ var picker = new MapmyIndia.placePicker(options);
 #### Optional Parameters
 1. `Place Options`: any object containing optional configurations for modifying the search request.
     - `location`: location coordinates which will be used as radial bias (not restriction; only BIAS). e.g. `location:[28.61, 77.23]`
+    - `geolocation`: boolean value used to enable or disable current location selection . Default is true.
     - `closeBtn`: (boolean): to give the option to close Place Picker (including hiding the top bar that has search & lower bar area that has the 'Done' button and related sub-text). Default is `true`.
     - `closeBtn_callback`: A callback method that is called when user clicks on the close button at the top left. To provide a call to action upon user closing the Place Picker plugin and thus providing the ability to continue towards further action by the consuming app.
     - `search`: (boolean): To enable / disable the integrated Place Search plugin. Default is `true`.
