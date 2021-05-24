@@ -76,7 +76,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 7.  `alternatives`: Search for alternative routes. Passing a number: e.g. alternatives=n searches for up to n alternative routes. Please note that even if alternative routes are requested, a result cannot be guaranteed.
 6.  `radiuses`: Limits the search to given radius in meters. For all way-points including start and end points. {radius};{radius}[;{radius} ...]. (shall be part of premium offering).
 7. `steps`(boolean): Return route steps for each route leg. Possible values are true/false. By default it will be used as true. <Recommended=false; unless otherwise recommended by MapmyIndia>
-7.  `exclude`(string): Additive list of road classes to avoid, order does not matter. Possible values are toll, motorway & ferry. Multiple values can be sent separated by
+7.  `exclude`(string): Additive list of road classes to avoid, order does not matter. Possible values are toll, motorway & ferry. Multiple values can be selected.
 8. `start_icon` (string): To set the icon for start point.
     - Example: 
         ```js
@@ -115,7 +115,8 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 16. `divId`: The HTML where developer wishes results to be displayed.
 17. `divWidth`: (in pixels) For customizing or improving results display UI.
 18. `autoSubmit` : Property that will be called when user directly want to display the results. Default remains true.
-19. `maxVia`: Property that helps to limit the number of viapoints in any route. maximum Value  up to 98.
+19. `geolocation`: boolean value used to enable or disable current location selection . Default is true.
+20. `maxVia`: Property that helps to limit the number of viapoints in any route. maximum Value  up to 98.
 
 
 <br>
