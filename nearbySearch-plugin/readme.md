@@ -70,6 +70,7 @@ var options = {
   keywords: 'atm',
   refLocation: [28.632735, 77.219696],
   fitbounds: true,
+  geolocation: true,
   click_callback: function(d) {
     alert(d);
   }
@@ -131,13 +132,14 @@ OR
 6. `popup`: (boolean) Default is true if map is used. Used to bind popup to markers.
 7. `popupOptions`: (object) Used to define pop up optional configuration. <br>Example: `popupOptions: {maxWidth:250}`
 8. `fitbounds`: (boolean) Default is true. Used to fit all markers to in map view bound.
-9. `radius`: (number): Defines the radius of nearby search.
-10. `bounds`: (geographic bounds): Used to define the rectangular bounds within which nearby search will work.
-11. `sortBy`: (string)Used to sort the nearby search results.
-12. `page`: (number): to request another page of results if available.
-13. `pod`: (string): to filter to a certain type of results.
-14. `callback`: (method): results will be returned in this method if specified.
-15. `callback_click`: (method): a method that will be called when user clicks on any listing. The action returns the eLoc of the selected place.
+9. `geolocation`: boolean value used to enable or disable current location selection . Default is true.
+10. `radius`: (number): Defines the radius of nearby search.
+11. `bounds`: (geographic bounds): Used to define the rectangular bounds within which nearby search will work.
+12. `sortBy`: (string)Used to sort the nearby search results.
+13. `page`: (number): to request another page of results if available.
+14. `pod`: (string): to filter to a certain type of results.
+15. `callback`: (method): results will be returned in this method if specified.
+16. `callback_click`: (method): a method that will be called when user clicks on any listing. The action returns the eLoc of the selected place.
 
 <br>
 
