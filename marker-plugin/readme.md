@@ -42,7 +42,7 @@ The SDK offers the following basic functionalities:
 
 Visit the following link for visiting the live demo: 
 
-[Under Construction]()
+[LIVE DEMO](https://www.mapmyindia.com/api/advanced-maps/doc/sample/mapmyindia_elocMarkerPlugin)
 
 The above implementation uses MapmyIndia Interactive Map JS library as map rendering framework showcasing integration of marker plugin.
 
