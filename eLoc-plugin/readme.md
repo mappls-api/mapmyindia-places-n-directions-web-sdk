@@ -80,10 +80,11 @@ var elocObj = MapmyIndia.getEloc({ map: map, eloc: '3F45CB', callback: elocData 
 3. `divId`: The div to put the result in.
 4. `callback`: to return data to a specified callback method.
 5. `markerPopup` (boolean): to show pop-ups on marker click. Default is true.(example: `markerPopup:true`)
-6. `fitbounds` (boolean): To show all rendered eLoc(s) in a single view bound. (example: `fitbounds:true`)
-7. `fitboundOptions` : padding in fitbounds, if any. (Example: `{ padding:50,maxZoom:18}`)
-8. `infoDiv` (boolean): To render html div on map or not. Default is true. (example: `infoDiv:true`)
-9. `click_callback`: method to call on click of callback. 
+6. `popupHtml`: to show html pop up on marker click. User should define values to be shown while using this parameter.(example: `obj.setPopup({content:"<h1>Hello MapmyIndia</h1>"})`)
+7. `fitbounds` (boolean): To show all rendered eLoc(s) in a single view bound. (example: `fitbounds:true`)
+8. `fitboundOptions` : padding in fitbounds, if any. (Example: `{ padding:50,maxZoom:18}`)
+9. `infoDiv` (boolean): To render html div on map or not. Default is true. (example: `infoDiv:true`)
+10. `click_callback`: method to call on click of callback. 
 
 ### 2. Method to remove the markers populated by Place Details plugin
 
@@ -95,6 +96,12 @@ elocObj.remove();
 
 ```js
 elocObj.setDivContent(“Div html);
+```
+### 4. Method to set up the pop up content on marker as html.
+For Eg:
+
+```js
+obj.setPopup({content:"<h1>Hello MapmyIndia</h1>"});
 ```
 
 ### Sample code Snippet
