@@ -115,13 +115,14 @@ The following are the sub-params for the object:
         openPopup:true //open popup as default with add marker
      }
     ```
-3. `icon`: (object) the customized marker icon options. The following are the sub-params for the object: 
+4. `icon`: (object) the customized marker icon options. The following are the sub-params for the object: 
     - `url`: the URL specifying the marker image.
     - `width`: width of the marker icon.
     - `height`: height of the marker icon.
     - `offset`: offset positioning of the marker's anchor.
     - `popupAnchor`: positioning of the marker popup's anchor.
     <br>
+    
     e.g. 
     ```js
     {
@@ -132,17 +133,13 @@ The following are the sub-params for the object:
         popupAnchor:[-5,-40]
     }
     ```
-5. `draggable`: (boolean) to set the marker(s) as draggable or not.
+5. `draggable`: (boolean) to set the marker(s) as draggable or not.    
 
 <br>
 
 ### 2. Method for getting all markers to fit in a viewbound
 #### Method
 `fitbounds()`
-
-```js
-var obj=MapmyIndia.elocMarker(options);
-```
 
 ```js
 obj.fitbounds(options); //options are optional e.g. {padding:100}
@@ -155,20 +152,12 @@ obj.fitbounds(options); //options are optional e.g. {padding:100}
 `remove()`
 
 ```js
-var obj=MapmyIndia.elocMarker(options);
-```
-
-```js
 obj.remove();
 ```
 
 ### 4. Method for adding event listeners on the marker
 #### Method
 `addListener()`
-
-```js
-var obj=MapmyIndia.elocMarker(options);
-```
 
 ```js
 obj.addListener(event,callback);
@@ -184,10 +173,6 @@ obj.addListener(‘click’,function(data){console.log(data);});
 `removeListener()`
 
 ```js
-var obj=MapmyIndia.elocMarker(options);
-```
-
-```js
 obj.removeListener(event);
 ```
 
@@ -196,13 +181,9 @@ Example:
 obj.removeListener(‘click’);
 ```
 
-### 3. Method for setting icons for markers
+### 6. Method for setting icons for markers
 #### Method
 `setIcon()`
-
-```js
-var obj=MapmyIndia.elocMarker(options);
-```
 
 ```js
 obj.setIcon(‘url.png’); //replaces all marker's icon.
@@ -212,9 +193,26 @@ OR
 
 ```js
 obj.setIcon(‘url.png’,’mmi000’); //replaces single marker's icon for the provided eLoc.
+
+```
+
+### 7. Method for setting pophtml for markers
+#### Method
+`setPopup()`
+
+```js
+obj.setPopup({content:"<h1>MapmyIndia</h1>"}); //replaces all marker's pop up values.
+```
+
+OR
+
+```js
+obj.setPopup({content:"<h1>MapmyIndia</h1>",eloc:'123zrr'}); //replaces single marker's popup value for the provided eLoc.
 ```
 
 <br>
+
+
 
 That's All !
 
