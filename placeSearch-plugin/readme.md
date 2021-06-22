@@ -71,6 +71,7 @@ The above implementation uses MapmyIndia Interactive Map JS library as map rende
                 bridge:true,
                 tokenizeAddress:true,*
                 filter:'cop:9QGXAM',
+                hyperLocal:true, Default is false. Location parameter is mandatory to use this parameter.
                 distance:true,
                 width:300,
                 height:300*/
@@ -99,6 +100,7 @@ new MapmyIndia.search(document.getElementById("auto"),placeOptions,callback);
         - Can be used to filter results by eLoc. e.g. `cop:9qgxam`
         - Can be used to filter results by view bound. e.g. `filter=bounds:28.598882,77.212407;28.467375,77.353513`
     - `bridge`: initiates a bridge to be created to provide applicable nearby API searches. Involves using Nearby Search Plugin in conjunction with Place Search Plugin.
+    - `hyperLocal`:This parameter lets the search give results that are hyper-localized to the reference location passed in the location parameter. This means that nearby                          results are given higher ranking than results far from the reference location. Highly prominent results will still appear in the search results, however theu                    will be lower in the list of results. This parameter will work ONLY in conjunction with the location parameter.
     - `tokenizeAddress`: boolean value used to return address tokens from the searched places from MapmyIndia Search APIs. e.g. `tokenizeAddress:true`
     - `distance`: boolean value used to show aerial distance from location passed in `location`. of the searched place in results listing e.g. `distance:true`
     - `geolocation` : boolean value used to enable or disable current location selection . Default is true.
