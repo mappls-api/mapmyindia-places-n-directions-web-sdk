@@ -74,7 +74,10 @@ The above implementation uses MapmyIndia Interactive Map JS library as map rende
                 hyperLocal:true, Default is false. Location parameter is mandatory to use this parameter.
                 distance:true,
                 width:300,
-                height:300*/
+                height:300,
+                clearButton:false, //to hide cross button, which is right side of search input
+                blank_callback:function(){console.log("called when click on cross button or input value become blank");}
+                */
             };
 
 new MapmyIndia.search(document.getElementById("auto"),placeOptions,callback);
