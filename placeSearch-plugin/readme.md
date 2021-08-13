@@ -109,7 +109,9 @@ new MapmyIndia.search(document.getElementById("auto"),placeOptions,callback);
     - `geolocation` : boolean value used to enable or disable current location selection . Default is true.
     - `width`: width of the suggested div. e.g. `width:300`
     - `height`: height of the suggested div. e.g `height:300`
+    - `clearButton` : clear the value of input box. Default is true.
 2. `callback`: callback to get results/error after call or selection.
+3. `blank_callback` : callback when user clicks the cross button or erase the value of input box.
 
 <br>
 
@@ -121,6 +123,20 @@ Following is an example of calling MapmyIndia.search() method programmatically f
 /*CALL for fix text - LIKE THIS*/
     new MapmyIndia.search("agra",placeOptions,callback);
 ```
+
+### Other Methods
+
+**setToken("token")** - This method is used when you receive a callback of token error. To set new token following method should be refered.
+
+For Eg: if the users receives an error in callback like {error: "error-Passport invalid-Passport seems to be invalid or not active anymore-responsecode:401"}, 
+use
+
+```js
+MapmyIndia.setToken();
+``` 
+If this returns true, then the token is placed successfuly, otherwise token is not valid.
+
+
 
 ### Sample code Snippet
 
