@@ -98,7 +98,7 @@ var picker = new MapmyIndia.placePicker(options);
     - `topText`: The banner text to show at the top as title of the Place Picker plugin. Default is `Place Picker`.
     - `pinImage`: (URL) The PIN icon on the map. 
     - `pinHeight`: (number). To adjust the placement of the PIN icon on the map.
-    - `callback`: (method): to get data after location selection . If no callback method is specified, UI `GET` button will be hidden. In this case, the consuming app can get data by calling method `getData()`.
+    - `callback`: (method): to get data after location selection . If no callback method is specified, UI `GET` button will be hidden. In this case, the consuming app can get data by calling method `getLocation()`.
 
 <br>
 
