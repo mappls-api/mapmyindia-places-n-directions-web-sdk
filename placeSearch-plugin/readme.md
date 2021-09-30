@@ -110,6 +110,7 @@ new MapmyIndia.search(document.getElementById("auto"),placeOptions,callback);
     - `width`: width of the suggested div. e.g. `width:300`
     - `height`: height of the suggested div. e.g `height:300`
     - `clearButton` : clear the value of input box. Default is true.
+    -  `searchChars` : number to start search after minimum characters typed.
 2. `callback`: callback to get results/error after call or selection.
 3. `blank_callback` : callback when user clicks the cross button or erase the value of input box.
 
