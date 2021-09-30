@@ -117,6 +117,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 18. `autoSubmit` : Property that will be called when user directly want to display the results. Default remains true.
 19. `geolocation`: boolean value used to enable or disable current location selection . Default is true.
 20. `maxVia`: Property that helps to limit the number of viapoints in any route. maximum Value  up to 98.
+21. `searchChars` : number to start search after minimum characters typed.ie searchChars:2
 
 
 <br>
