@@ -80,7 +80,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 8. `start_icon` (string): To set the icon for start point.
     - Example: 
         ```js
-        icon: {
+        start_icon: {
             url: '2.png',
             width: 30, //optional
             height: 40 //optional
@@ -88,7 +88,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
         ```
         OR 
          ```js
-         icon: {
+         start_icon: {
             html: " < div > < img src = 'pin.png' > < /div>",
             width: 30, //optional
             height: 40, //optional
@@ -98,7 +98,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
         ```
    
 12. `end icon` (string) : To set the icon for end point.
-6. `via`: (object) : To add a geo positions between start and end points.
+13. `via`: (object) : To add a geo positions between start and end points.
    - Example: For single via Point
         ```js
         via: {
@@ -110,14 +110,15 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
         ```js
         via:[{label:'mathura',geoposition:"28.544,77.4541"},{label:'Koshi',geoposition:"28.144,77.4541"}],
         ```
-14. `fitbounds`: (boolean). Used to fit the route to in map view bound. Default is true.
-15. `search` : Referred to the intergarated MapmyIndia Search. Default remains true.
-16. `divId`: The HTML where developer wishes results to be displayed.
-17. `divWidth`: (in pixels) For customizing or improving results display UI.
-18. `autoSubmit` : Property that will be called when user directly want to display the results. Default remains true.
-19. `geolocation`: boolean value used to enable or disable current location selection . Default is true.
-20. `maxVia`: Property that helps to limit the number of viapoints in any route. maximum Value  up to 98.
-21. `searchChars` : number of characters required to start search. ie searchChars:2
+14. `via_icon` (object): To set the icon for via points, ie via_icon:{url:'1.png',width:20,height:40} or via_icon:{html:"<div><img src='1.png'>1</div>",width:20,height:40}.
+15. `fitbounds`: (boolean). Used to fit the route to in map view bound. Default is true.
+16. `search` : Referred to the intergarated MapmyIndia Search. Default remains true.
+17. `divId`: The HTML where developer wishes results to be displayed.
+18. `divWidth`: (in pixels) For customizing or improving results display UI.
+19. `autoSubmit` : Property that will be called when user directly want to display the results. Default remains true.
+20. `geolocation`: boolean value used to enable or disable current location selection . Default is true.
+21. `maxVia`: Property that helps to limit the number of viapoints in any route. maximum Value  up to 98.
+22. `searchChars` : number of characters required to start search. ie searchChars:2
 
 
 <br>
