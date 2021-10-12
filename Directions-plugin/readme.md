@@ -110,7 +110,8 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
         ```js
         via:[{label:'mathura',geoposition:"28.544,77.4541"},{label:'Koshi',geoposition:"28.144,77.4541"}],
         ```
-14. `via_icon` (object): To set the icon for via points, ie via_icon:{url:'1.png',width:20,height:40} or via_icon:{html:"<div><img src='1.png'>1</div>",width:20,height:40}.
+14. `via_icon` (object): To set the icon for via points,
+     - Example: via_icon:{url:'1.png',width:20,height:40} or via_icon:{html:"<div><img  src= '1.png' >1</div>",width:20,height:40}.
 15. `fitbounds`: (boolean). Used to fit the route to in map view bound. Default is true.
 16. `search` : Referred to the intergarated MapmyIndia Search. Default remains true.
 17. `divId`: The HTML where developer wishes results to be displayed.
