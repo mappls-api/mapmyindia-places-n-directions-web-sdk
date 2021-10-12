@@ -121,6 +121,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 20. `geolocation`: boolean value used to enable or disable current location selection . Default is true.
 21. `maxVia`: Property that helps to limit the number of viapoints in any route. maximum Value  up to 98.
 22. `searchChars` : number of characters required to start search. ie searchChars:2
+23. callback: (function). to get callback data after route plotted.
 
 
 <br>
