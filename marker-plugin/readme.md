@@ -210,7 +210,8 @@ OR
 obj.setPopup({content:"<h1>MapmyIndia</h1>",eloc:'123zrr'}); //replaces single marker's popup value for the provided eLoc.
 ```
 
-<br>
+
+
 ### 8. Method for setting marker on top 
 #### Method
 `setTop()`
