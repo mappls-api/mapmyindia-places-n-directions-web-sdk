@@ -211,7 +211,15 @@ obj.setPopup({content:"<h1>MapmyIndia</h1>",eloc:'123zrr'}); //replaces single m
 ```
 
 <br>
+### 8. Method for setting marker on top 
+#### Method
+`setTop()`
 
+```js
+obj.setTop(eloc); //make single eloc on top to others
+```
+
+<br>
 
 
 That's All !
