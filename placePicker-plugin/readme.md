@@ -70,6 +70,7 @@ var options=
         callback:callback_method
         /*
         location:{lat:28.8787,lng:77.08888}, //to open that location on map on initailization
+        hyperLocal:true, //Default is false. Location parameter is mandatory to use this parameter.
         closeBtn:true,
 	geolocation:false,
         closeBtn_callback:closeBtn_callback,
@@ -91,6 +92,7 @@ var picker = new MapmyIndia.placePicker(options);
 #### Optional Parameters
 1. `Place Options`: any object containing optional configurations for modifying the search request.
     - `location`: location coordinates which will be used as radial bias (not restriction; only BIAS). e.g. `location:[28.61, 77.23]`
+    - `hyperLocal`: This parameter lets the search give results that are hyper-localized to the reference location passed in the location parameter. This means that nearby results are given higher ranking than results far from the reference location. Highly prominent results will still appear in the search results, however they will be lower in the list of results. This parameter will work ONLY in conjunction with the location parameter.
     - `geolocation`: boolean value used to enable or disable current location selection . Default is true.
     - `closeBtn`: (boolean): to give the option to close Place Picker (including hiding the top bar that has search & lower bar area that has the 'Done' button and related sub-text). Default is `true`.
     - `closeBtn_callback`: A callback method that is called when user clicks on the close button at the top left. To provide a call to action upon user closing the Place Picker plugin and thus providing the ability to continue towards further action by the consuming app.
