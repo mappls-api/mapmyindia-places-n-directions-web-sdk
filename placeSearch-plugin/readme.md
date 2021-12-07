@@ -98,6 +98,7 @@ new MapmyIndia.search(document.getElementById("auto"),placeOptions,callback);
         - DIST (district)
         - STATE
         - SSLC (sub sub locality)
+        - POI
     - `filter`: a parameter to restrict results by. e.g. `filter:'cop:9qgxam'`
         - Can be used to filter results by PIN code. e.g. `pin:110055`
         - Can be used to filter results by eLoc. e.g. `cop:9qgxam`
