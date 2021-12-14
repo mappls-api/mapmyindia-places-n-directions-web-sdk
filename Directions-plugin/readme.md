@@ -59,6 +59,28 @@ Visit the following link for visiting the live demo:
 ```js
 MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delhi',geoposition:"1T182A"}});
 ```
+## Additional Parameter - alongTheRoute 
+ 
+1. `alongTheRoute` : _true/false_. Default is false.
+    
+    To access this parameter , please contact [API Support](mailto:apisupport@mapmyindia.com)
+    This parameter takes the encoded route along which POIs will be searched. 
+    
+    This parameter is further having many configurable options listed below.
+
+    - `buffer`: 200, _// Buffer of the road. Minimum value is 25m, maximum is 1000m and default is 25m_
+    - `sort`: false, _//default is true_
+    - `category`:  
+        - `catCode`: 'FINATM', _//The POI category code to be searched. Only one category input supported by default_
+        - `icon`: "icon image path
+        " _//absolute path of the desired image_
+        - `width`:  '30px' _//width of the icon image_
+        - `height`: '30px' _//height of the icon image_
+        - `label`: 'Restaurants' _the name  user puts to show the category. For Eg: "Restaurants"_
+
+    - `page`: 1,  _// Used for pagination, Default is 1_
+
+    _*Advisory - Route length not more than 30 kms long_
 
 
 ### Optional Parameters
