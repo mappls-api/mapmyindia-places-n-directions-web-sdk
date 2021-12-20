@@ -78,6 +78,10 @@ var options=
         topText:'Location Search',
         pinImage:'pin.png', //custom pin image
         pinHeight:40
+	pod:'City',
+        tokenizeAddress:true,*
+        filter:'cop:9QGXAM',
+        distance:true,
         */
     };
 var picker = new MapmyIndia.placePicker(options);
@@ -100,6 +104,22 @@ var picker = new MapmyIndia.placePicker(options);
     - `topText`: The banner text to show at the top as title of the Place Picker plugin. Default is `Place Picker`.
     - `pinImage`: (URL) The PIN icon on the map. 
     - `pinHeight`: (number). To adjust the placement of the PIN icon on the map.
+    - `pod`: Place type which you want to restrict the results by. e.g. `pod:'city'`. Valid values are: 
+        - SLC (sub locality)
+        - LC (locality)
+        - CITY
+        - VLG (village)
+        - SDIST (sub district)
+        - DIST (district)
+        - STATE
+        - SSLC (sub sub locality)
+        - POI (place of interest)
+    - `filter`: a parameter to restrict results by. e.g. `filter:'cop:9qgxam'`
+        - Can be used to filter results by PIN code. e.g. `pin:110055`
+        - Can be used to filter results by eLoc. e.g. `cop:9qgxam`
+        - Can be used to filter results by view bound. e.g. `filter=bounds:28.598882,77.212407;28.467375,77.353513`
+    - `tokenizeAddress`: boolean value used to return address tokens from the searched places from MapmyIndia Search APIs. e.g. `tokenizeAddress:true`
+    - `distance`: boolean value used to show aerial distance from location passed in `location`. of the searched place in results listing e.g. `distance:true`
     - `callback`: (method): to get data after location selection . If no callback method is specified, UI `GET` button will be hidden. In this case, the consuming app can get data by calling method `getLocation()`.
 
 <br>
