@@ -143,7 +143,20 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 20. `geolocation`: boolean value used to enable or disable current location selection . Default is true.
 21. `maxVia`: Property that helps to limit the number of viapoints in any route. maximum Value  up to 98.
 22. `searchChars` : number of characters required to start search. ie searchChars:2
-23. callback: (function). to get callback data after route plotted.
+23. `pod`: Place type which you want to restrict the results by. e.g. `pod:'city'`. Valid values are: 
+        - SLC (sub locality)
+        - LC (locality)
+        - CITY
+        - VLG (village)
+        - SDIST (sub district)
+        - DIST (district)
+        - STATE
+        - SSLC (sub sub locality)
+        - POI (place of interest)
+24 `distance`: boolean value used to show aerial distance from location passed in `location`. of the searched place in results listing e.g. `distance:true`
+25 `hyperLocal`: This parameter lets the search give results that are hyper-localized to the reference location passed in the location parameter. This means that nearby results are given higher ranking than results far from the reference location. Highly prominent results will still appear in the search results, however they will be lower in the list of results. This parameter will work ONLY in conjunction with the location parameter.
+26 `location`: location coordinates which will be used as radial bias search (not restriction; only BIAS). e.g. `location:[28.61, 77.23]`
+27. callback: (function). to get callback data after route plotted.
 
 
 <br>
