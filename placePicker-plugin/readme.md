@@ -120,6 +120,7 @@ var picker = new MapmyIndia.placePicker(options);
         - Can be used to filter results by view bound. e.g. `filter=bounds:28.598882,77.212407;28.467375,77.353513`
     - `tokenizeAddress`: boolean value used to return address tokens from the searched places from MapmyIndia Search APIs. e.g. `tokenizeAddress:true`
     - `distance`: boolean value used to show aerial distance from location passed in `location`. of the searched place in results listing e.g. `distance:true`
+    -  `searchChars` : number to start search after minimum characters typed.
     - `callback`: (method): to get data after location selection . If no callback method is specified, UI `GET` button will be hidden. In this case, the consuming app can get data by calling method `getLocation()`.
 
 <br>
