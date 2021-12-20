@@ -71,6 +71,8 @@ var options = {
   refLocation: [28.632735, 77.219696],
   fitbounds: true,
   geolocation: true,
+  hyperLocal:true, Default is false. refLocation parameter is mandatory to use this parameter.
+  filter:'cop:9QGXAM',
   click_callback: function(d) {
     alert(d);
   }
@@ -138,8 +140,10 @@ OR
 12. `sortBy`: (string)Used to sort the nearby search results.
 13. `page`: (number): to request another page of results if available.
 14. `pod`: (string): to filter to a certain type of results.
-15. `callback`: (method): results will be returned in this method if specified.
-16. `callback_click`: (method): a method that will be called when user clicks on any listing. The action returns the eLoc of the selected place.
+15. `hyperLocal`:This parameter lets the search give results that are hyper-localized to the reference location passed in the location parameter. This means that nearby                          results are given higher ranking than results far from the reference location. Highly prominent results will still appear in the search results, however theu                    will be lower in the list of results. This parameter will work ONLY in conjunction with the location parameter.
+16.  `searchChars` : number to start search after minimum characters typed.
+17. `callback`: (method): results will be returned in this method if specified.
+18. `callback_click`: (method): a method that will be called when user clicks on any listing. The action returns the eLoc of the selected place.
 
 <br>
 
