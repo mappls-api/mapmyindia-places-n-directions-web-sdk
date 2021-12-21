@@ -80,7 +80,19 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 
     - `page`: 1,  _// Used for pagination, Default is 1_
 
-    _*Advisory - Route length not more than 30 kms long_
+ Refer to the Code Snippet if the you need to configure the default options.
+ 
+ ```js
+        alongTheRoute: {
+                          options: { "page": 1, "buffer": 1000, "sort": false },
+                          category: [
+                              { catCode: 'FINATM', icon: "custom icon url", width: '30px', height: '30px',label:'ATM' },
+                              { catCode: 'HOTALL', icon: "custom icon url", width: '30px', height: '30px',label:'Hotels' }
+                          ],
+                      }
+ ```
+ 
+ _*Advisory - Route length not more than 30 kms long_
 
 
 ### Optional Parameters
