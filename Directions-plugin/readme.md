@@ -79,7 +79,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
         - `label`: 'Restaurants' _the name  user puts to show the category. For Eg: "Restaurants"_
 
     - `page`: 1,  _// Used for pagination, Default is 1_
-    - `poicallback`: to get data of alongthe route pois }
+    - `poicallback`: to get data of alongtheroute pois.
 
  Refer to the Code Snippet if the you need to configure the default options.
  
