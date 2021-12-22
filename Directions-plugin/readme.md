@@ -79,6 +79,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
         - `label`: 'Restaurants' _the name  user puts to show the category. For Eg: "Restaurants"_
 
     - `page`: 1,  _// Used for pagination, Default is 1_
+    - `poicallback`: to get data of alongthe route pois }
 
  Refer to the Code Snippet if the you need to configure the default options.
  
@@ -89,6 +90,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
                               { catCode: 'FINATM', icon: "custom icon url", width: '30px', height: '30px',label:'ATM' },
                               { catCode: 'HOTALL', icon: "custom icon url", width: '30px', height: '30px',label:'Hotels' }
                           ],
+                          poicallback: function (data) { console.log(data); }
                       }
  ```
  
@@ -169,6 +171,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 25 `hyperLocal`: This parameter lets the search give results that are hyper-localized to the reference location passed in the location parameter. This means that nearby results are given higher ranking than results far from the reference location. Highly prominent results will still appear in the search results, however they will be lower in the list of results. This parameter will work ONLY in conjunction with the location parameter.
 26 `location`: location coordinates which will be used as radial bias search (not restriction; only BIAS). e.g. `location:[28.61, 77.23]`
 27. callback: (function). to get callback data after route plotted.
+
 
 
 <br>
