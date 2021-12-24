@@ -112,8 +112,10 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 7.  `alternatives`: Search for alternative routes. Passing a number: e.g. alternatives=n searches for up to n alternative routes. Please note that even if alternative routes are requested, a result cannot be guaranteed.
 6.  `radiuses`: Limits the search to given radius in meters. For all way-points including start and end points. {radius};{radius}[;{radius} ...]. (shall be part of premium offering).
 7. `steps`(boolean): Return route steps for each route leg. Possible values are true/false. By default it will be used as true. <Recommended=false; unless otherwise recommended by MapmyIndia>
-7.  `exclude`(string): Additive list of road classes to avoid, order does not matter. Possible values are toll, motorway & ferry. Multiple values can be selected.
-8. `start_icon` (string): To set the icon for start point.
+8. `stepPopup`: Possible values are true/false //By default false. If set true, steps written in popups will be shown.
+9. `stepIcon`: Possible values are true/false //By default true. If set true, step icon will be visible.
+10.  `exclude`(string): Additive list of road classes to avoid, order does not matter. Possible values are toll, motorway & ferry. Multiple values can be selected.
+11. `start_icon` (string): To set the icon for start point.
     - Example: 
         ```js
         start_icon: {
@@ -134,7 +136,8 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
         ```
    
 12. `end icon` (string) : To set the icon for end point.
-13. `via`: (object) : To add a geo positions between start and end points.
+13. `iconPopup` : Possible values are true/false. Sets popup for start, via and end icons. //By default true. 
+14. `via`: (object) : To add a geo positions between start and end points.
    - Example: For single via Point
         ```js
         via: {
@@ -170,7 +173,12 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
 24 `distance`: boolean value used to show aerial distance from location passed in `location`. of the searched place in results listing e.g. `distance:true`
 25 `hyperLocal`: This parameter lets the search give results that are hyper-localized to the reference location passed in the location parameter. This means that nearby results are given higher ranking than results far from the reference location. Highly prominent results will still appear in the search results, however they will be lower in the list of results. This parameter will work ONLY in conjunction with the location parameter.
 26 `location`: location coordinates which will be used as radial bias search (not restriction; only BIAS). e.g. `location:[28.61, 77.23]`
-27. callback: (function). to get callback data after route plotted.
+27. `routeColor` : To configure the route colors displayed on the map. The colors will be applied in order of the route suggested. Will accept rgb, Hex code as well as color names.For Eg: If only one color is suggested then the most prior route color would be changed and rest routes will be shown in default colors. User can configure as many colors as per suggestions.
+28. `strokeWidth` : To assign width of the route.The width will be applied in order of the route suggested. Default value is 4.For Eg: If only one width is suggested then the most prior route width would be changed and rest routes will be shown in default width. User can configure as many widths as per suggestions.
+29.  `borderColor` : To assign color to the outline of the route.The colors will be applied in order of the route suggested. Will accept rgb, Hex code as well as color names.For Eg: If only one color is suggested then the most prior route color would be changed and rest routes will be shown in default color. User can configure as many colors as per suggestions.
+30. `activeColor` : To configure the color of Active Route. Please note If `routeColor` is assigned then `activeColor` will hide the first suggested route.Will accept rgb, Hex code as well as color names.
+31. `activeStrokeWidth` : To assign width of the route. Default value is 7.
+32.  callback: (function). to get callback data after route plotted.
 
 
 
