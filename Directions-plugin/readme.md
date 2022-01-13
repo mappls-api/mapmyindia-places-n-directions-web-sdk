@@ -94,7 +94,7 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
                       }
  ```
  
- _*Advisory - Route length not more than 30 kms long_
+ _*Advisory - Route length should not more than 30 kms long_
 
 
 ### Optional Parameters
