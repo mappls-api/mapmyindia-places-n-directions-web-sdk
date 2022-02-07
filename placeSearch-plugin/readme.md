@@ -148,7 +148,7 @@ If this returns true, then the token is placed successfuly, otherwise token is n
       <title>MapmyIndia Plugin - Search Plugin</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="desciption" content="Mapmyindia Search Plugin">
-      <script src="https://apis.mapmyindia.com/advancedmaps/v1/<token/key>/map_load?v=1.3"></script>
+      <script src="https://apis.mapmyindia.com/advancedmaps/v1/<token/key>/map_load?v=1.5"></script>
       <script src="https://apis.mapmyindia.com/advancedmaps/api/<token/jwt key>/map_sdk_plugins"></script>
       <style>
          body{margin: 0}
