@@ -11,9 +11,10 @@ Powered with India's most comprehensive and robust mapping functionalities. Now 
 
 ## Document Version History
 
-| Version | Last Updated  | Author                                                        |
-| ------- | ------------- | ------------------------------------------------------------- |
-| 0.0.1   | 04 March 2021 | MapmyIndia API Team ([MS](https://github.com/mamtasharma117)) |
+| Version | Last Updated  | Author                                                        |Remarks
+| ------- | ------------- | ------------------------------------------------------------- |-------------- |
+| 0.0.2   | 07 March 2022 | MapmyIndia API Team ([MS](https://github.com/mamtasharma117)) | Events Along the Route Support Added
+| 0.0.1   | 04 March 2021 | MapmyIndia API Team ([MS](https://github.com/mamtasharma117)) | Initial Commit
 
 ## Introduction
 
@@ -59,7 +60,7 @@ Visit the following link for visiting the live demo:
 ```js
 MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delhi',geoposition:"1T182A"}});
 ```
-## Additional Parameter - alongTheRoute 
+## Additional Parameter - alongTheRoute POIs
  
 1. `alongTheRoute` : _true/false_. Default is false.
     
@@ -96,6 +97,19 @@ MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delh
  
  _*Advisory - Route length should not more than 30 kms long_
 
+2.  `routeSummary` : _true/false_. Default is false. This feature allows to show the events reports along the route like road and safety, traffic conditions etc.
+    
+    To access this parameter , please contact [API Support](mailto:apisupport@mapmyindia.com)
+    
+     Refer to the Code Snippet if the you need to get the callback.
+ 
+ ```js
+        routeSummary:{
+                summarycallback:function(data){
+                    console.log(data);
+                     }
+            },
+ ```
 
 ### Optional Parameters
 
