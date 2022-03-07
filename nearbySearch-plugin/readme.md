@@ -14,8 +14,9 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 ## Document Version History
 
-| Version | Last Updated | Author |
-| ---- | ---- | ---- |
+| Version | Last Updated | Author |Remarks
+| ---- | ---- | ---- |---- |
+| 0.0.2 | 2 March 2022 | MapmyIndia API Team ([MS](https://github.com/mamtasharma117)) | Indic Support in Input Parameters
 | 0.0.1 | 14 January 2021 | MapmyIndia API Team ([KB](https://github.com/kunalbharti)) |
 
 
@@ -83,8 +84,8 @@ var nr = MapmyIndia.nearby(options);
 
 #### Mandatory Parameters
 1. `keywords`: The string or JSON object which will be passed as input query to the search engine. Examples
-    - **As a string**: `keywords:"atm"`
-    - **As a JSON object**: `keywords:{'FINATM':'ATMS','FODCOF':'Restaurants'}`
+    - **As a string**: `keywords:"atm"`. This parameter supports input in Hindi Language `keywords:"चाय"`. To get the feature contact apisupport@mapmyindia.com.
+    - **As a JSON object**: `keywords:{'FINATM':'ATMS','FODCOF':'Restaurants'}`. This parameter supports input in Hindi Language `keywords:{'एचडीएफसी ':'एटीएम'}`. To get the feature contact apisupport@mapmyindia.com.
     <br>This mechanism is used to display a selection of POI categories on a UI.
     <br>If `keywords` parameter is used, then `refLocation` input also becomes mandatory.
 
