@@ -60,7 +60,7 @@ Visit the following link for visiting the live demo:
 ```js
 MapmyIndia.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delhi',geoposition:"1T182A"}});
 ```
-## Additional Parameter - alongTheRoute POIs
+## Additional Parameter - alongTheRoute
  
 1. `alongTheRoute` : _true/false_. Default is false.
     
