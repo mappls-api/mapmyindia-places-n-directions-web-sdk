@@ -60,7 +60,7 @@ The above implementation uses MapmyIndia Interactive Map JS library as map rende
 
 #### Method
 
-`MapmyIndia.placePickersearch()`
+`MapmyIndia.placePicker()`
 
 ```js
 /*Place Picker plugin initialization*/
